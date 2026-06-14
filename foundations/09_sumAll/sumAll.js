@@ -7,20 +7,11 @@ const sumAll = function (a, b) {
 };
 
 const sumTwo = (bigger, smaller) => {
-  let arr = [];
-
-  for (let i = smaller; i <= bigger; i++) {
-    arr.push(i);
-  }
-
   let res = 0;
-  const initialValue = 0;
-  const sumWithInitial = arr.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    initialValue,
-  );
-
-  return sumWithInitial;
+  for (let i = smaller; i <= bigger; i++) {
+    res += i;
+  }
+  return res;
 };
 
 // Do not edit below this line
